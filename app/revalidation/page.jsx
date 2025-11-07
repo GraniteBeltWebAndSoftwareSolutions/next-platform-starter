@@ -13,7 +13,7 @@ const maxExtractLength = 200;
 const revalidateTTL = 60;
 
 const explainer = `
-This page perfoms a \`fetch\` on the server to get a random article from Wikipedia. 
+Jason this page perfoms a \`fetch\` on the server to get a random ass article from Wikipedia. 
 The fetched data is then cached with a tag named "${tagName}" and a maximum age of ${revalidateTTL} seconds.
 
 ~~~jsx
@@ -27,7 +27,7 @@ async function RandomArticleComponent() {
 }
 ~~~
 
-After the set time has passed, the first request for this page would trigger its rebuild in the background. When the new page is ready, subsequent requests would return the new page - 
+Jason after the set time has passed, the first request for this page would trigger its rebuild in the background. When the new page is ready, subsequent requests would return the new page - 
 see [\`stale-white-revalidate\`](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/).
 
 Alternatively, if the cache tag is explicitly invalidated by \`revalidateTag('${tagName}', 'max')\`, any page using that tag would be rebuilt in the background when requested. The \`'max'\` cacheLife profile (new in Next.js 16) enables background revalidation for long-lived content.
@@ -48,7 +48,7 @@ export default async function Page() {
             <h1 className="mb-8">Revalidation Basics</h1>
             <Markdown content={explainer} className="mb-6" />
             <form className="mb-8" action={revalidateWiki}>
-                <SubmitButton text="Click to Revalidate" />
+                <SubmitButton text="Click to Return a Revalidate" />
             </form>
             <RandomWikiArticle />
         </>

@@ -1,11 +1,11 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-// pages/classics.jsx
-// Next.js single-file Classics page with an HTML5 Canvas infinite runner
+// pages/Game.jsx
+// Next.js single-file Game page with an HTML5 Canvas infinite runner
 // Built with React + Tailwind classes for layout. Default export a React component.
 // Controls: Space / Up Arrow / Tap to jump. R to restart.
 
-export default function ClassicsPage() {
+export default function GamePage() {
   const canvasRef = useRef(null);
   const [running, setRunning] = useState(true);
   const [score, setScore] = useState(0);
